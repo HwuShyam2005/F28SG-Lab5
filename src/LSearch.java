@@ -40,6 +40,17 @@ public class LSearch {
 	/*
 	 * Part 3: complete
 	 */	
+	/**
+	 * Uses linear search to look up a given name in the catalogue and returns the
+	 * number if the name is in the catalogue. Otherwise it returns -1.
+	 * 
+	 * TODO Where N is the number of entries in the catalogue the (worst case) complexity is:
+	 *
+	 * O(?)
+	 *  
+	 * @param name is the person name to look for in the catalogue
+	 * @return the number of that person, otherwise -1 to indicate an error
+	 */
 	public int linearSearch(String name){
 		// your code
 		return -1; 
