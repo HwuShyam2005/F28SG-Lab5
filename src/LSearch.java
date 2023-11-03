@@ -52,7 +52,18 @@ public class LSearch {
 	 * @return the number of that person, otherwise -1 to indicate an error
 	 */
 	public int linearSearch(String name){
-		// your code
-		return -1; 
-	}
-}
+//DECLARING VARIABLE CURRENT NODE OF TYPE NODE AND INITALIZING TO HEADNODE
+		Node currentNode = headNode;
+//CREATING A FOR LOOP IN WHICH LOOP CONTINUES UNTILL AND AND UNLESS CURRENTNODE IS NOT NULL
+//UPDATES CURRENTNODE AFTER EACH ITERATION TO NEXT NODE IN CURRENTNODE.GETNEXTNODE()
+		for (; currentNode != null; currentNode = currentNode.getNextNode()) {
+//CHECKS IF NAME OF VALUE RELATED TO CURRENT NODE IN LINKED LIST MATCH NAME			
+			if (currentNode.getValue().getName().equals(name)) {
+//IF THE MATCH IS FOUND , LINE RETURNS CORRESPONDING NUMBER RELATED WITH NAME IN NODE
+		        return currentNode.getValue().getNumber();
+		    }
+		}
+
+		return -1;
+				}
+			}

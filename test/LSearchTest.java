@@ -23,14 +23,17 @@ public class LSearchTest {
 	
 	@Test
 	public void testLinearSearchOK() {
-		// test the linear search method for someone who's in the collection
-		fail("not implemented yet");
+		//TESTING IN LINEAR SEARCH FOR A PERSON PRESENT IN THE COLLECTION
+		assertEquals(111,ls.linearSearch("Andrew"));
+		assertEquals(321,ls.linearSearch("Ewen"));
+		assertEquals(123,ls.linearSearch("Peter"));
+		assertEquals(222,ls.linearSearch("Roger"));
 	}
 
 	@Test
 	public void testLinearSearchFail() {
-		// test the linear search method for someone who's not in the collection
-		fail("not implemented yet");
+		//TESTING IN LINEAR SEARCH FOR A PERSON NOT PRESENT IN THE COLLECTION
+		assertEquals(-1,ls.linearSearch("Parthiban"));
 	}
 
 }

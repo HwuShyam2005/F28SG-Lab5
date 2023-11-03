@@ -21,26 +21,32 @@ public class ASearchTest {
 	
 	@Test
 	public void testLinearSearchOK() {
-		// test the linear search method for someone who's in the collection
-		fail("not implemented yet");
+		//TESTING IN LINEAR SEARCH FOR A PERSON PRESENT IN THE COLLECTION
+		assertEquals(111,as.linearSearch("Andrew"));
+		assertEquals(321,as.linearSearch("Ewen"));
+		assertEquals(123,as.linearSearch("Peter"));
+		assertEquals(222,as.linearSearch("Roger"));
 	}
 
 	@Test
 	public void testLinearSearchFail() {
-		// test the linear search method for someone who's not in the collection
-		fail("not implemented yet");
+		//TESTING IN LINEAR SEARCH FOR A PERSON NOT PRESENT IN THE COLLECTION
+		assertEquals(-1,as.linearSearch("Parthiban"));
 	}
 	
 	@Test
 	public void testBinarySearchOK() {
-		// test the binary search method for someone who's in the collection
-		fail("not implemented yet");
+		//TESTING IN BINARY SEARCH FOR A PERSON PRESENT IN THE COLLECTION
+		assertEquals(111,as.binarySearch("Andrew"));
+		assertEquals(321,as.binarySearch("Ewen"));
+		assertEquals(123,as.binarySearch("Peter"));
+		assertEquals(222,as.binarySearch("Roger"));
 	}
 	
 	@Test
 	public void testBinarySearchFail() {
-		// test the binary search method for someone who's not in the collection
-		fail("not implemented yet");
+		//TESTING IN BINARY SEARCH FOR A PERSON NOT PRESENT IN THE COLLECTION
+		assertEquals(-1,as.binarySearch("Parthiban"));
 	}
 
 }
